@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+    --background-bar: #222222;
+    --font-family: 'Roboto';
+    --color-menu-desktop: #F3F3F3;
+    --font-size-brand: 24px;
+    --color-pizza: #39B24A;
+    --color-pizzai: #FFF;
+    --color-pizzafront: #FC200C;
+    --font-size-xl: 16px;
+    --background-color-main: #F3F3F3;
+    --background-color-arbol: #FFF;
+    --font-weight: 700;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    font-family: var(--font-family);
+}
+
+header {
+    display: flex;
+    width: 480px;
+    height: 100px;
+    min-width: 320px;
+    background-color: var(--background-bar);
+    align-items: center;
+}
+img:nth-child(1) {
+    width: 57px;
+    height: 50px;
+}
+
+header img:nth-child(even) {
+    width: 24px;
+    height: 24px;
+    margin-right: 25px;
+}
+.header--nav{
+    display: inline-grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    height: 100%;
+}
+.header--nav img{
+    margin-left: 25px;
+}
+span{
+    color: var(--color-menu-desktop);
+    font-size: var(--font-size-brand);
+}
+.text-pizza_mobile{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.text-pizza{
+    display: flex;
+}
+.text-pizza_mobile span:nth-child(1), .text-pizza span:nth-child(1) {
+    color: var(--color-pizza);
+    font-weight: 700;
+}
+.text-pizza_mobile span:nth-child(2), .text-pizza span:nth-child(2){
+    color: var(--color-pizzai);
+    font-weight: 700;
+}
+.text-pizza_mobile span:nth-child(3), .text-pizza span:nth-child(3){
+    color: var(--color-pizzafront);
+    font-weight: 700;
+}
+.cards--section-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.container-podio_mobile{
+    width: 465px;
+    height: 330px;
+    border-radius: 5px;
+    flex-direction: row-reverse;
+    background-color: var(--background-color-arbol);
+}
+.podio--info{
+    width: 100%;
+    height: 277px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+section{
+    width: 480px;
+    height: 790px;
+    background-color: var(--color-menu-desktop);
+}
+.podio--info img{
+    width: 87px;
+    height: 122px;
+}
+.podio--info ol{
+    margin: 0 0 0 35px;
+}
+.podio--info ol li{
+    font-size: 16px;
+    font-weight: 700;
+}
+.container-podio_mobile span{
+    display: flex;
+    justify-content: center;
+    color: #FC200C;
+    font-weight: 700;
+    margin-top: 25px;
+    font-size: var(--font-size-brand);
+}
+.container-podio_mobile p{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+ol li{
+    padding-bottom: 10px;
+}
+.container-delivery_mobile{
+    position: relative;
+    width: 465px;
+    height: 330px;
+    border-radius: 5px;
+    background-image: url("/img/delivery.svg");
+}
+.text-pizza-delivery{
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    left: 20px;
+    font-size: var(--font-size-brand);
+    display: flex;
+    gap: 0.3em;
+}
+.text-pizza-delivery p:nth-child(1), p:nth-child(2), p:nth-child(4){
+    color: var(--color-pizzafront);
+    font-weight: 700;
+}
+.text-pizza-delivery p:nth-child(3){
+    color: var(--color-pizzai);
+    font-weight: 700;
+}
+.container-footer{
+    display: flex;
+    width: 480px;
+    height: 100px;
+    min-width: 320px;
+    background-color: var(--background-bar);
+
+}
+footer{
+    display: flex;
+    width: 480px;
+    height: 100px;
+    flex-direction: row-reverse;
+}
+.footer-menu{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.brand-footer{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-left: 20px;
+}
+.footer-menu ul{
+    list-style: none;
+    font-size: 10px;
+    column-gap: 2em;
+    /*margin: 0;*/
+    /*padding: 0 0 0 1.5em;*/
+    color: var(--color-menu-desktop)
+}
+.footer-menu li{
+    margin-bottom: 0.7em;
+}
+

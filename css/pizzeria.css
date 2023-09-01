@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+    --background-bar: #222222;
+    --font-family: 'Roboto';
+    --color-menu-desktop: #F3F3F3;
+    --font-size-brand: 24px;
+    --color-pizza: #39B24A;
+    --color-pizzai: #FFF;
+    --color-pizzafront: #FC200C;
+    --font-size-xl: 16px;
+    --background-color-main: #F3F3F3;
+    --background-color-arbol: #FFF;
+    --font-weight: 700;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    font-family: var(--font-family);
+}
+
+.container-navigation{
+    font-family: var(--font-family);
+    height: 6.25em;
+    width: 64em;
+    background-color: var(--background-bar);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.container-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.container-menu img{
+    margin: 0 0 0 1.25em;
+}
+.text-pizza{
+    width: 100%;
+    font-size: var(--font-size-brand);
+    margin: 0 0 0 0.4em;
+}
+.text-pizza span:nth-child(1){
+    color: var(--color-pizza);
+    font-weight: 700;
+}
+.text-pizza span:nth-child(2){
+    color: var(--color-pizzai);
+    font-weight: 700;
+}
+.text-pizza span:nth-child(3){
+    color: var(--color-pizzafront);
+    font-weight: 700;
+}
+.container-desktop{
+    width: 100%;
+    color: var(--color-menu-desktop);
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 1.25em;
+
+}
+.container-desktop ul{
+    list-style: none;
+    margin: 0;
+    display: flex;
+    font-size: var(--font-size-xl);
+    gap: 1em;
+}
+.container-main{
+    width: 64em;
+    height: 26.25em;
+    display: flex;
+    align-items: center;
+    background-color: var(--background-color-main);
+    flex-direction: row-reverse;
+    margin: auto;
+    padding: 0;
+
+}
+.container-podio{
+    width: 30.625em;
+    height: 21.875em;
+    border-radius: 5px;
+    background-color: var(--background-color-arbol);
+    display: grid;
+    justify-items: flex-start;
+
+}
+.container-podio span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: var(--font-size-brand);
+    color: var(--color-pizzafront);
+    font-weight: var(--font-weight);
+
+}
+.flex-podio{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    font-weight: var(--font-weight);
+    align-items: center;
+}
+
+ol li{
+    padding-bottom: 0.625em;
+}
+ol p{
+    padding-bottom: 1.5em;
+    font-size: 20px;
+    font-weight: 700;
+}
+.container-delivery{
+    position: relative;
+    width: 30.625em;
+    height: 21.875em;
+}
+.text-pizza-delivery{
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    left: 20px;
+    font-size: var(--font-size-brand);
+    display: flex;
+    gap: 0.3em;
+}
+.text-pizza-delivery p:nth-child(1), p:nth-child(2), p:nth-child(4){
+    color: var(--color-pizzafront);
+    font-weight: 700;
+}
+.text-pizza-delivery p:nth-child(3){
+    color: var(--color-pizzai);
+    font-weight: 700;
+}
+.container-footer{
+    height: 9.375em;
+    width: 64em;
+    background-color: var(--background-bar);
+    display: flex;
+    justify-items: flex-end;
+}
+footer{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.footer-menu{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+.brand-footer{
+    display: flex;
+    align-items: center;
+    margin-left: 39.5em;
+    width: 100%;
+    height: 100%;
+}
+.footer-menu ul{
+    list-style: none;
+    font-size: var(--font-size-xl);
+    column-gap: 2em;
+    margin: 0;
+    padding: 0 0 0 1.5em;
+    color: var(--color-menu-desktop)
+}
+.footer-menu li{
+    margin-bottom: 0.7em;
+}
+
+
+
